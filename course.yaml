@@ -3,7 +3,7 @@
 
 # Stable UUID — generated automatically by GitHub Action.
 # Leave empty when creating a new course; do NOT change once assigned.
-id:
+id: e9f0a2d1-9446-4a55-898f-70c92f1d55c4
 
 # Human-readable identifier. Used in URLs.
 # Format: lowercase, kebab-case, [a-z0-9-]+

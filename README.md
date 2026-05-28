@@ -153,7 +153,7 @@ npx @wockitech/studyme-preview lesson block-1/lesson-1
 ## Ссылки
 
 - [Документация StudyMe](https://docs.studyme.wockitech.local)
-- [GitHub Action: studyme-action](https://github.com/wockitech/studyme-action)
+- [GitHub Action: studyme-course-tools](https://github.com/wocki-wockitech/studyme-course-tools)
 - [CLI: studyme-cli](https://github.com/wockitech/studyme-cli)
 - [Сообщество авторов](https://t.me/studyme_authors)
 

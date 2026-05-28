@@ -14,7 +14,7 @@
 # See _templates/question/ for one ready-to-copy example per type.
 
 questions:
-  - id:                                     # auto-filled
+  - id: 0f99ddbf-a921-4d69-939c-bec77c2d51e5  # auto-filled
     slug: example-question
     type: multiple_choice
     difficulty: 2                           # 1-5

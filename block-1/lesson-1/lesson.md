@@ -1,6 +1,6 @@
 ---
 # Stable UUID — generated automatically. Do NOT change.
-id:
+id: 038bf4ed-abc5-457d-a038-4af960648049
 title: "First Lesson"
 # Optional: estimated reading time in minutes
 estimated_minutes: 5
