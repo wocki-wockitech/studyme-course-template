@@ -20,10 +20,12 @@ questions:
     difficulty: 2                           # 1-5
     text: "What is the answer to this example question?"
     options:
-      - "Option A"
-      - "Option B (correct)"
-      - "Option C"
-      - "Option D"
-    correct: 1                              # 0-based index
+      - text: "Option A"
+      - text: "Option B (correct)"
+        correct: true
+        feedback: "This is the right answer because..."
+      - text: "Option C"
+        feedback: "Not quite — this is a distractor."
+      - text: "Option D"
     reference_answer: >
       Brief explanation shown after the student answers.

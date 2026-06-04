@@ -150,6 +150,41 @@ npx @wockitech/studyme-preview lesson block-1/lesson-1
 - **`questions.yaml`** — пул вопросов для мини-теста урока и итогового теста блока
 - **`challenges/<slug>/challenge.yaml`** — описание код-задачи
 
+## Обновление из шаблона
+
+Шаблон развивается — появляются новые форматы, CI-шаги, Obsidian-настройки.
+Ваш контент при обновлении не затрагивается.
+
+### Автоматически (рекомендуется)
+
+Нажмите **Actions → Sync template → Run workflow** в вашем репозитории.
+Workflow подтянет обновления из шаблона и создаст PR.
+
+### Вручную
+
+```bash
+# Добавить remote (один раз)
+git remote add template https://github.com/wockitech/studyme-course-template.git
+
+# Подтянуть и перезаписать инфра-файлы
+git fetch template main
+git checkout template/main -- _templates/ .github/ docs/ .obsidian/ .studymeignore .gitignore
+
+# Закоммитить
+git add .
+git commit -m "chore: sync from template"
+```
+
+### Что обновляется
+
+| Перезаписывается из шаблона | Не трогается |
+|---|---|
+| `_templates/` | `course.yaml` |
+| `.github/` | Папки блоков и уроков |
+| `docs/` | `questions.yaml` в уроках |
+| `.obsidian/` | `README.md` |
+| `.studymeignore`, `.gitignore` | |
+
 ## Ссылки
 
 - [Документация StudyMe](https://docs.studyme.wockitech.local)
