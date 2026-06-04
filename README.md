@@ -164,7 +164,7 @@ Workflow подтянет обновления из шаблона и созда
 
 ```bash
 # Добавить remote (один раз)
-git remote add template https://github.com/wockitech/studyme-course-template.git
+git remote add template https://github.com/wocki-wockitech/studyme-course-template.git
 
 # Подтянуть и перезаписать инфра-файлы
 git fetch template main
