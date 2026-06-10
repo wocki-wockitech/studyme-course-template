@@ -5,7 +5,7 @@
 
 ## Что это
 
-Курс — это набор блоков. Блок — набор уроков. Урок — markdown + пул вопросов.
+Курс — это набор блоков. Блок — набор уроков. Урок — markdown + карточки с вопросами.
 Платформа индексирует репозиторий по тегам Git.
 
 ```
@@ -15,7 +15,7 @@ my-course/
 │   ├── block.yaml
 │   ├── lesson-1/            ← урок (slug = имя папки)
 │   │   ├── lesson.md
-│   │   ├── questions.yaml
+│   │   ├── cards/           ← вопросы (один файл = одна карточка)
 │   │   └── challenges/      ← опционально, код-задачи
 │   └── lesson-2/
 └── block-2/
@@ -129,10 +129,10 @@ npx @wockitech/studyme-preview lesson block-1/lesson-1
 
 Что Obsidian показывает иначе чем платформа:
 
-- Custom-тип callouts (`> [!quiz]`, `> [!challenge]`, `> [!sandbox]`)
+- Custom-тип callouts (`> [!card]`, `> [!challenge]`, `> [!sandbox]`)
   в Obsidian рендерятся как обычные блоки. На платформе StudyMe — как
   встроенные виджеты с реальным тестом / редактором кода / песочницей
-- Можно положить CSS snippet в vault чтобы стилизовать quiz/challenge
+- Можно положить CSS snippet в vault чтобы стилизовать card/challenge
   в Obsidian с теми же иконками что на платформе
 
 В будущем планируется свой Obsidian-плагин StudyMe, который будет
@@ -147,7 +147,7 @@ npx @wockitech/studyme-preview lesson block-1/lesson-1
 - **`course.yaml`** — манифест курса
 - **`block.yaml`** — манифест блока (порядок уроков, настройки итогового теста)
 - **`lesson.md`** — контент урока с frontmatter и markdown-директивами
-- **`questions.yaml`** — пул вопросов для мини-теста урока и итогового теста блока
+- **`cards/`** — карточки с вопросами для мини-теста урока и итогового теста блока
 - **`challenges/<slug>/challenge.yaml`** — описание код-задачи
 
 ## Обновление из шаблона
@@ -181,7 +181,7 @@ git commit -m "chore: sync from template"
 |---|---|
 | `_templates/` | `course.yaml` |
 | `.github/` | Папки блоков и уроков |
-| `docs/` | `questions.yaml` в уроках |
+| `docs/` | `cards/` в уроках |
 | `.obsidian/` | `README.md` |
 | `.studymeignore`, `.gitignore` | |
 

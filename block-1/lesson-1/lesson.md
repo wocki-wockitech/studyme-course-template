@@ -61,9 +61,9 @@ syntax (or standard markdown links — both work):
 
 ## Try it yourself
 
-Embed an inline quiz that pulls a question from `questions.yaml`:
+Embed an inline quiz that pulls a question from `cards/`:
 
-> [!quiz] example-question
+> [!card] example-question
 
 ## Coding challenge
 

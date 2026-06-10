@@ -3,7 +3,7 @@ id: ""  # auto-filled by studyme-action fix-ids
 difficulty: 3
 tags: [example]
 
-variants:
+questions:
   - type: categorize
     text: "Categorize each file by where it belongs:"
     categories:

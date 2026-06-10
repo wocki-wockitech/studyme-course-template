@@ -1,9 +1,9 @@
-# Template: single question file for questions/<slug>.yaml format.
+# Template: single card file for cards/<slug>.yaml format.
 #
-# One file per question concept. Supports multiple variants (alternative
+# One file per question concept. Supports multiple questions (alternative
 # formulations). The file name (without .yaml) becomes the question slug.
 #
-# Supported variant types:
+# Supported question types:
 #   multiple_choice, true_false, ordering, matching, categorize,
 #   free_text, coding, git_interactive
 #
@@ -14,7 +14,7 @@ id: ""  # auto-filled by studyme-action fix-ids, never change
 difficulty: 2  # 1-5
 tags: []  # optional, for analytics
 
-variants:
+questions:
   # ─── multiple_choice ──────────────────────────────────────────
   - type: multiple_choice
     text:

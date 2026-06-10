@@ -3,7 +3,7 @@ id: ""  # auto-filled by studyme-action fix-ids
 difficulty: 2
 tags: [example]
 
-variants:
+questions:
   - type: matching
     text: "Match each file to its purpose:"
     pairs:

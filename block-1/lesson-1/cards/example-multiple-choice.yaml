@@ -1,9 +1,9 @@
-# Multiple choice question with variants (multiple formulations of same concept).
+# Multiple choice question with questions (multiple formulations of same concept).
 id: ""  # auto-filled by studyme-action fix-ids
 difficulty: 1
 tags: [example]
 
-variants:
+questions:
   - type: multiple_choice
     text: "What file defines the course structure?"
     options:

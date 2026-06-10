@@ -4,7 +4,7 @@ id: ""  # auto-filled by studyme-action fix-ids
 difficulty: 2
 tags: [example]
 
-variants:
+questions:
   - type: ordering
     text: "In what order do you set up a new course?"
     items:
